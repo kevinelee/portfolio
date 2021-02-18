@@ -1,20 +1,22 @@
 import React from "react";
-import K from "./images/k.png";
+import KevinK from "./images/k.png";
 
 const TitleItem = ({ href, title }) => {
   return (
-    <a
-      href={href}
-      className="text-gray-100 hover:bg-gray-700 hover:text-white px-3 py-2 rounded-md text-sm font-medium"
-    >
-      {title}
-    </a>
+    <div className="tester">
+      <a
+        href={href}
+        className="text-black hover:text-gray-500 px-2 py-2 rounded-md text-sm font-medium"
+      >
+        {title}
+      </a>
+    </div>
   );
 };
 
 export default function Navbar() {
   return (
-    <nav className="bg-gray-500 shadow-xl">
+    <nav className="bg-white shadow-sm">
       <div className="max-w-7xl mx-auto px-2 sm:px-6 lg:px-8">
         <div className="relative flex items-center justify-between h-16">
           <div className="absolute inset-y-0 left-0 flex items-center sm:hidden">
@@ -68,21 +70,25 @@ export default function Navbar() {
               </svg>
             </button>
           </div>
-          <div className="flex-1 flex items-center justify-center sm:items-stretch sm:justify-start">
+          <div className="flex-1 flex items-center justify-center items-stretch justify-start md:justify-between ">
             <div className="flex-shrink-0 flex items-center">
-              <img
-                className="block lg:hidden h-8 w-auto"
-                src={K}
-                alt="Workflow"
-              />
-              <img
-                className="hidden lg:block h-8 w-auto"
-                src={K}
-                alt="Workflow"
-              />
+              <a href="#">
+                <img
+                  className="block lg:hidden h-8 w-auto"
+                  src={KevinK}
+                  alt="Workflow"
+                />
+              </a>
+              <a href="#">
+                <img
+                  className="hidden lg:block h-8 w-auto"
+                  src={KevinK}
+                  alt="Workflow"
+                />
+              </a>
             </div>
             <div className="hidden sm:block sm:ml-6">
-              <div className="flex space-x-4">
+              <div className="flex space-x-4 ">
                 {/* Current: "bg-gray-900 text-white", Default: "text-gray-300 hover:bg-gray-700 hover:text-white" */}
                 <TitleItem href="#" title="Home" />
                 <TitleItem href="#" title="About Me" />
