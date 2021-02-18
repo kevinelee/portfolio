@@ -3,7 +3,7 @@ import KevinK from "./images/k.png";
 
 const TitleItem = ({ href, title }) => {
   return (
-    <div className="tester">
+    <div className="navbar-item">
       <a
         href={href}
         className="text-black hover:text-gray-500 px-2 py-2 rounded-md text-sm font-medium"
@@ -16,7 +16,7 @@ const TitleItem = ({ href, title }) => {
 
 export default function Navbar() {
   return (
-    <nav className="bg-white shadow-sm">
+    <nav className="bg-white shadow-sm absolute top-0 w-full">
       <div className="max-w-7xl mx-auto px-2 sm:px-6 lg:px-8">
         <div className="relative flex items-center justify-between h-16">
           <div className="absolute inset-y-0 left-0 flex items-center sm:hidden">
@@ -70,11 +70,11 @@ export default function Navbar() {
               </svg>
             </button>
           </div>
-          <div className="flex-1 flex items-center justify-center items-stretch justify-start md:justify-between ">
-            <div className="flex-shrink-0 flex items-center">
+          <div className="flex-1 flex items-center justify-center items-stretch justify-start md:justify-between  ">
+            <div className="flex-shrink-0 flex items-center transform hover:scale-125 transition duration-300 ease-in-out">
               <a href="#">
                 <img
-                  className="block lg:hidden h-8 w-auto"
+                  className="block lg:hidden h-8 w-auto "
                   src={KevinK}
                   alt="Workflow"
                 />

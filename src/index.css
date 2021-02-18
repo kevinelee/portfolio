@@ -30,12 +30,12 @@ code {
   outline: none;
 }
 
-.tester > a {
+.navbar-item > a {
   text-decoration: none;
   z-index: 1;
 }
 
-.tester > a:before {
+.navbar-item > a:before {
   content: "";
   position: absolute;
   width: 100%;
@@ -47,8 +47,59 @@ code {
   transform: scaleX(0) scaleY(0);
   transition: 0.3s linear;
 }
-.tester > a:hover:before,
-.tester > a:focus:before {
+.navbar-item > a:hover:before,
+.navbar-item > a:focus:before {
   visibility: visible;
   transform: scaleX(1);
+}
+
+.hero {
+  position: relative;
+  height: 100vh;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.hero::before {
+  content: "";
+  background-image: url("./images/office\ picture.jpg");
+  background-size: cover;
+  position: absolute;
+  top: 0px;
+  right: 0px;
+  bottom: 0px;
+  left: 0px;
+  opacity: 0.75;
+}
+
+.banner-container {
+  min-height: 380px;
+  height: 100vh;
+}
+
+.banner {
+  background-image: url("./images/office\ picture.jpg");
+  opacity: 30%;
+  min-height: 380px;
+  height: 100vh;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  /* Needed to position the navbar */
+  /* position: relative; */
+}
+
+.banner-content {
+  min-height: 380px;
+  height: 100vh;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
 }
