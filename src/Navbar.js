@@ -1,11 +1,11 @@
 import React from "react";
 import KevinK from "./images/k.png";
 
-const TitleItem = ({ href, title }) => {
+const TitleItem = ({ title }) => {
   return (
     <div className="navbar-item">
       <a
-        href={href}
+        href="/"
         className="text-black hover:text-gray-500 px-2 py-2 rounded-md text-sm font-medium"
       >
         {title}
@@ -72,14 +72,14 @@ export default function Navbar() {
           </div>
           <div className="flex-1 flex items-center justify-center items-stretch justify-start md:justify-between  ">
             <div className="flex-shrink-0 flex items-center transform hover:scale-125 transition duration-300 ease-in-out">
-              <a href="#">
+              <a href="/">
                 <img
                   className="block lg:hidden h-8 w-auto "
                   src={KevinK}
                   alt="Workflow"
                 />
               </a>
-              <a href="#">
+              <a href="/">
                 <img
                   className="hidden lg:block h-8 w-auto"
                   src={KevinK}
@@ -90,11 +90,11 @@ export default function Navbar() {
             <div className="hidden sm:block sm:ml-6">
               <div className="flex space-x-4 ">
                 {/* Current: "bg-gray-900 text-white", Default: "text-gray-300 hover:bg-gray-700 hover:text-white" */}
-                <TitleItem href="#" title="Home" />
-                <TitleItem href="#" title="About Me" />
-                <TitleItem href="#" title="Applications" />
-                <TitleItem href="#" title="Skills" />
-                <TitleItem href="#" title="Contact Me" />
+                <TitleItem href="/" title="Home" />
+                <TitleItem href="/" title="About Me" />
+                <TitleItem href="/" title="Applications" />
+                <TitleItem href="/" title="Skills" />
+                <TitleItem href="/" title="Contact Me" />
               </div>
             </div>
           </div>
