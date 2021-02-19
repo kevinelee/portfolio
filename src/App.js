@@ -1,13 +1,14 @@
-import './App.css';
-import Navbar from './Navbar';
-import Banner from './Banner';
+import "./App.css";
+import Banner from "./Banner";
+import Bio from "./bio";
+import Navbar from "./Navbar";
 
 function App() {
   return (
     <div className="App">
-      <Banner/>
-
-
+      <Navbar />
+      <Banner />
+      <Bio />
     </div>
   );
 }
