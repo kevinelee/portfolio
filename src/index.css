@@ -107,7 +107,7 @@ code {
 @keyframes slideUp {
   0% {
     transform: translateY(200%) scale(0.9);
-    opacity: 0%;
+    opacity: 0;
   }
   /* 80% {
     transform: translateY(-100%) scale(4);
@@ -115,7 +115,7 @@ code {
   } */
   100% {
     transform: translateY(0) scale(1);
-    opacity: 100%;
+    opacity: 1;
   }
 }
 
