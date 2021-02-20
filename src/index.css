@@ -81,7 +81,7 @@ code {
 
 .banner {
   background-image: url("./images/office\ picture.jpg");
-  opacity: 30%;
+  /* opacity: 30%; */
   min-height: 380px;
   height: 100vh;
   top: 0;
