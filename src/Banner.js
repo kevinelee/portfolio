@@ -6,8 +6,10 @@ export default function Banner() {
       <div className="">
         <div className="banner"></div>
         <div className="banner-content flex justify-center items-center absolute flex-col">
-          <p className="text-7xl">Hi!</p>
-          <p className="text-7xl">My name is Kevin, and I'm a developer.</p>
+          <p className="text-7xl hero-text">Hi!</p>
+          <p className="text-5xl hero-text">
+            My name is Kevin, and I'm a developer.
+          </p>
         </div>
       </div>
     </section>
